@@ -55,6 +55,8 @@ function misorize(str) {
 
 	str = str.replace(/[a-z]{3}/g, 'miso')
 	str = str.replace(/[A-Z]{3}/g, 'Miso')
+	str = str.replace(/みみみ/g, 'みぃそ')
+	str = str.replace(/そそそ/g, 'みぃそ')
 	str = str.replace(/ミミミ/g, 'ミィソ')
 	str = str.replace(/ソソソ/g, 'ミィソ')
 	str = str.replace(/^[ミッゥ]/gm, 'ミ')
@@ -79,5 +81,6 @@ function miso()
 <hr/>
 <textarea id="uhogo" rows="20" cols="100"></textarea>
 <br>
-元ネタ: http://www.geocities.jp/uho_uho_uho_ho/uho.html
+元ネタ: http://www.geocities.jp/uho_uho_uho_ho/uho.html<br>
+Ver:4
 </body>
