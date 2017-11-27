@@ -7,19 +7,19 @@
 function misorize(str) {
 	str = str.replace(/[ｱｶｻﾀﾅﾊﾏﾔﾗﾜ]/g,'ﾐ')
 	str = str.replace(/[ｲｷｼﾁﾆﾋﾐﾘ]/g,'ｿ')
-	str = str.replace(/[ｳｸｽﾂﾇﾌﾑﾕﾙ]/g,'ﾐ')
+	str = str.replace(/[ｳｸｽﾂﾇﾌﾑﾕﾙ]/g,'ｵ')
 	str = str.replace(/[ｴｹｾﾃﾈﾍﾒﾚ]/g,'ｿ')
 	str = str.replace(/[ｵｺｿﾄﾉﾎﾓﾖﾛｦﾝ]/g,'ﾐ')
 	str = str.replace(/ｶﾞ|ｷﾞ|ｸﾞ|ｹﾞ|ｺﾞ]/g,'ｿﾞ')
 	str = str.replace(/ｻﾞ|ｼﾞ|ｽﾞ|ｾﾞ|ｿﾞ]/g,'ﾐﾞ')
 	str = str.replace(/ﾀﾞ|ﾁﾞ|ﾂﾞ|ﾃﾞ|ﾄﾞ]/g,'ﾆﾞ')
-	str = str.replace(/ﾊﾞ|ﾋﾞ|ﾌﾞ|ﾍﾞ|ﾎﾞ/g,'ｿﾞ')
+	str = str.replace(/ﾊﾞ|ﾋﾞ|ﾌﾞ|ﾍﾞ|ﾎﾞ/g,'ｵﾞ')
 	str = str.replace(/[ｬｭｮｧ]/g,'ｩ')
 	str = str.replace(/[ｯ]/g,'ｯ')	
 
 	str = str.replace(/[あかさたなはまやらわ]/g,'み')
 	str = str.replace(/[いきしちにひみり]/g,'そ')
-	str = str.replace(/[うくすつぬふむゆる]/g,'み')
+	str = str.replace(/[うくすつぬふむゆる]/g,'お')
 	str = str.replace(/[えけせてねへめれ]/g,'み')
 	str = str.replace(/[おこそとのほもよろをん]/g,'そ')
 	str = str.replace(/[がざだば]/g,'み')
@@ -27,7 +27,7 @@ function misorize(str) {
 	str = str.replace(/[ぐずづぶ]/g,'み')
 	str = str.replace(/[げぜでべ]/g,'み')
 	str = str.replace(/[ごぞどぼ]/g,'そ')	
-	str = str.replace(/[ぱぴぷぺぽ]/g,'そ')	
+	str = str.replace(/[ぱぴぷぺぽ]/g,'お')	
 	str = str.replace(/[ぁぃぅぇぉゃゅょ]/g,'ぉ')
 	str = str.replace(/[っ]/g,'っ')
 	
@@ -78,6 +78,6 @@ function miso()
 <button onclick='miso()'>ミソライズ実行</button>
 <hr/>
 <textarea id="uhogo" rows="20" cols="100"></textarea>
-
+<br>
 元ネタ: http://www.geocities.jp/uho_uho_uho_ho/uho.html
 </body>
