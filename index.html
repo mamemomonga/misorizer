@@ -1,0 +1,83 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>ミソライザー</title>
+<script>
+function misorize(str) {
+	str = str.replace(/[ｱｶｻﾀﾅﾊﾏﾔﾗﾜ]/g,'ﾐ')
+	str = str.replace(/[ｲｷｼﾁﾆﾋﾐﾘ]/g,'ｿ')
+	str = str.replace(/[ｳｸｽﾂﾇﾌﾑﾕﾙ]/g,'ﾐ')
+	str = str.replace(/[ｴｹｾﾃﾈﾍﾒﾚ]/g,'ｿ')
+	str = str.replace(/[ｵｺｿﾄﾉﾎﾓﾖﾛｦﾝ]/g,'ﾐ')
+	str = str.replace(/ｶﾞ|ｷﾞ|ｸﾞ|ｹﾞ|ｺﾞ]/g,'ｿﾞ')
+	str = str.replace(/ｻﾞ|ｼﾞ|ｽﾞ|ｾﾞ|ｿﾞ]/g,'ﾐﾞ')
+	str = str.replace(/ﾀﾞ|ﾁﾞ|ﾂﾞ|ﾃﾞ|ﾄﾞ]/g,'ﾆﾞ')
+	str = str.replace(/ﾊﾞ|ﾋﾞ|ﾌﾞ|ﾍﾞ|ﾎﾞ/g,'ｿﾞ')
+	str = str.replace(/[ｬｭｮｧ]/g,'ｩ')
+	str = str.replace(/[ｯ]/g,'ｯ')	
+
+	str = str.replace(/[あかさたなはまやらわ]/g,'み')
+	str = str.replace(/[いきしちにひみり]/g,'そ')
+	str = str.replace(/[うくすつぬふむゆる]/g,'み')
+	str = str.replace(/[えけせてねへめれ]/g,'み')
+	str = str.replace(/[おこそとのほもよろをん]/g,'そ')
+	str = str.replace(/[がざだば]/g,'み')
+	str = str.replace(/[ぎじぢび]/g,'そ')
+	str = str.replace(/[ぐずづぶ]/g,'み')
+	str = str.replace(/[げぜでべ]/g,'み')
+	str = str.replace(/[ごぞどぼ]/g,'そ')	
+	str = str.replace(/[ぱぴぷぺぽ]/g,'そ')	
+	str = str.replace(/[ぁぃぅぇぉゃゅょ]/g,'ぉ')
+	str = str.replace(/[っ]/g,'っ')
+	
+	str = str.replace(/[アカサタナハマヤラワ]/g,'ミ')
+	str = str.replace(/[イキシチニヒミリ]/g,'ソ')
+	str = str.replace(/[クスツヌフムユル]/g,'ミ')
+	str = str.replace(/[エケセテネヘメレ]/g,'ソ')
+	str = str.replace(/[コソトノモヨロヲン]/g,'ソ')
+	str = str.replace(/[ガザダバ]/g,'ミ')
+	str = str.replace(/[ギジヂビ]/g,'ソ')
+	str = str.replace(/[グズヅブ]/g,'ミ')
+	str = str.replace(/[ゲゼデベ]/g,'ソ')
+	str = str.replace(/[ゴゾドボ]/g,'ソ')	
+	str = str.replace(/[パピプペポ]/g,'ソ')	
+	str = str.replace(/[ァィゥェォャュョ]/g,'ィ')
+	str = str.replace(/[ッ]/g,'ッ')
+	
+	str = str.replace(/[0-4]/g,'ﾐ')
+    str = str.replace(/[6-9]/g,'ｿ')
+    str = str.replace(/[5]/g,'ｯ')
+
+	str = str.replace(/[a-hA-H]/g,'mi')
+    str = str.replace(/[i-pI-P]/g,'s')
+    str = str.replace(/[q-zQ-Z]/g,'o')
+
+	str = str.replace(/[a-z]{3}/g, 'miso')
+	str = str.replace(/[A-Z]{3}/g, 'Miso')
+	str = str.replace(/ホホホ/g, 'ミィソ')
+	str = str.replace(/ウウウ/g, 'ミィソ')
+	str = str.replace(/^[ホッゥ]/gm, 'ミ')
+	str = str.replace(/^[ｩｯ]/gm, 'ｨ')
+	return str;
+}
+
+function miso()
+{
+	var uhomae = document.getElementById("uhomae").value;
+	var uhogo = misorize(uhomae)
+	document.getElementById("uhogo").value = uhogo;
+}
+
+</script>
+</head>
+<body>
+<h1>ミソライザー</h1>
+<br/>
+<textarea id="uhomae" rows="20" cols="100"></textarea><br/>
+<button onclick='miso()'>ミソライズ実行</button>
+<hr/>
+<textarea id="uhogo" rows="20" cols="100"></textarea>
+
+元ネタ: http://www.geocities.jp/uho_uho_uho_ho/uho.html
+</body>
