@@ -1,86 +1,94 @@
-
 <html>
 <head>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <title>ミソライザー</title>
 <script>
 function misorize(str) {
-	str = str.replace(/[ｱｶｻﾀﾅﾊﾏﾔﾗﾜ]/g,'ﾐ')
-	str = str.replace(/[ｲｷｼﾁﾆﾋﾐﾘ]/g,'ｿ')
-	str = str.replace(/[ｳｸｽﾂﾇﾌﾑﾕﾙ]/g,'ｵ')
-	str = str.replace(/[ｴｹｾﾃﾈﾍﾒﾚ]/g,'ｿ')
-	str = str.replace(/[ｵｺｿﾄﾉﾎﾓﾖﾛｦﾝ]/g,'ﾐ')
-	str = str.replace(/ｶﾞ|ｷﾞ|ｸﾞ|ｹﾞ|ｺﾞ]/g,'ｿﾞ')
-	str = str.replace(/ｻﾞ|ｼﾞ|ｽﾞ|ｾﾞ|ｿﾞ]/g,'ﾐﾞ')
-	str = str.replace(/ﾀﾞ|ﾁﾞ|ﾂﾞ|ﾃﾞ|ﾄﾞ]/g,'ﾆﾞ')
-	str = str.replace(/ﾊﾞ|ﾋﾞ|ﾌﾞ|ﾍﾞ|ﾎﾞ/g,'ｵﾞ')
-	str = str.replace(/[ｬｭｮｧ]/g,'ｩ')
-	str = str.replace(/[ｯ]/g,'ｯ')	
-
-	str = str.replace(/[あかさたなはまやらわ]/g,'み')
-	str = str.replace(/[いきしちにひり]/g,'そ')
-	str = str.replace(/[うくすつぬふむゆる]/g,'お')
-	str = str.replace(/[えけせてねへめれ]/g,'み')
-	str = str.replace(/[おことのほもよろをん]/g,'そ')
-	str = str.replace(/[がざだば]/g,'み')
-	str = str.replace(/[ぎじぢび]/g,'そ')
-	str = str.replace(/[ぐずづぶ]/g,'み')
-	str = str.replace(/[げぜでべ]/g,'み')
-	str = str.replace(/[ごぞどぼ]/g,'そ')	
-	str = str.replace(/[ぱぴぷぺぽ]/g,'お')	
-	str = str.replace(/[ぁぃぅぇぉゃゅょ]/g,'ぉ')
-	str = str.replace(/[っ]/g,'っ')
+	return str.replace(/[ｱｶｻﾀﾅﾊﾏﾔﾗﾜ]/g,'ﾐ')
+	.replace(/[ｲｷｼﾁﾆﾋﾐﾘ]/g,'ｿ')
+	.replace(/[ｳｸｽﾂﾇﾌﾑﾕﾙ]/g,'ｵ')
+	.replace(/[ｴｹｾﾃﾈﾍﾒﾚ]/g,'ｿ')
+	.replace(/[ｵｺｿﾄﾉﾎﾓﾖﾛｦﾝ]/g,'ﾐ')
+	.replace(/ｶﾞ|ｷﾞ|ｸﾞ|ｹﾞ|ｺﾞ]/g,'ｿﾞ')
+	.replace(/ｻﾞ|ｼﾞ|ｽﾞ|ｾﾞ|ｿﾞ]/g,'ﾐﾞ')
+	.replace(/ﾀﾞ|ﾁﾞ|ﾂﾞ|ﾃﾞ|ﾄﾞ]/g,'ﾆﾞ')
+	.replace(/ﾊﾞ|ﾋﾞ|ﾌﾞ|ﾍﾞ|ﾎﾞ/g,'ｵﾞ')
+	.replace(/[ｬｭｮｧ]/g,'ｩ')
+	.replace(/[ｯ]/g,'ｯ')	
 	
-	str = str.replace(/[アカサタナハマヤラワ]/g,'ミ')
-	str = str.replace(/[イキシチニヒリ]/g,'ソ')
-	str = str.replace(/[ウクスツヌフムユル]/g,'ミ')
-	str = str.replace(/[エケセテネヘメレ]/g,'ソ')
-	str = str.replace(/[コソトノモホヨロヲン]/g,'ソ')
-	str = str.replace(/[ガザダバ]/g,'ミ')
-	str = str.replace(/[ギジヂビ]/g,'ソ')
-	str = str.replace(/[グズヅブ]/g,'ミ')
-	str = str.replace(/[ゲゼデベ]/g,'ソ')
-	str = str.replace(/[ゴゾドボ]/g,'ソ')	
-	str = str.replace(/[パピプペポ]/g,'ソ')	
-	str = str.replace(/[ァィゥェォャュョ]/g,'ィ')
-	str = str.replace(/[ッ]/g,'ッ')
+	.replace(/[あかさたなはまやらわ]/g,'み')
+	.replace(/[いきしちにひり]/g,'そ')
+	.replace(/[うくすつぬふむゆる]/g,'お')
+	.replace(/[えけせてねへめれ]/g,'み')
+	.replace(/[おことのほもよろをん]/g,'そ')
+	.replace(/[がざだば]/g,'み')
+	.replace(/[ぎじぢび]/g,'そ')
+	.replace(/[ぐずづぶ]/g,'み')
+	.replace(/[げぜでべ]/g,'み')
+	.replace(/[ごぞどぼ]/g,'そ')	
+	.replace(/[ぱぴぷぺぽ]/g,'お')	
+	.replace(/[ぁぃぅぇぉゃゅょ]/g,'ぉ')
+	.replace(/[っ]/g,'っ')
 	
-	str = str.replace(/[0-4]/g,'ﾐ')
-    str = str.replace(/[6-9]/g,'ｿ')
-    str = str.replace(/[5]/g,'ｯ')
+	.replace(/[アカサタナハマヤラワ]/g,'ミ')
+	.replace(/[イキシチニヒリ]/g,'ソ')
+	.replace(/[ウクスツヌフムユル]/g,'ミ')
+	.replace(/[エケセテネヘメレ]/g,'ソ')
+	.replace(/[コソトノモホヨロヲン]/g,'ソ')
+	.replace(/[ガザダバ]/g,'ミ')
+	.replace(/[ギジヂビ]/g,'ソ')
+	.replace(/[グズヅブ]/g,'ミ')
+	.replace(/[ゲゼデベ]/g,'ソ')
+	.replace(/[ゴゾドボ]/g,'ソ')	
+	.replace(/[パピプペポ]/g,'ソ')	
+	.replace(/[ァィゥェォャュョ]/g,'ィ')
+	.replace(/[ッ]/g,'ッ')
 
-	str = str.replace(/[a-hA-H]/g,'mi')
-    str = str.replace(/[i-pI-P]/g,'s')
-    str = str.replace(/[q-zQ-Z]/g,'o')
+	.replace(/[0-4]/g,'ﾐ')
+	.replace(/[6-9]/g,'ｿ')
+	.replace(/[5]/g,'ｯ')
 
-	str = str.replace(/[a-z]{3}/g, 'miso')
-	str = str.replace(/[A-Z]{3}/g, 'Miso')
-	str = str.replace(/みみみ/g, 'みぃそ')
-	str = str.replace(/そそそ/g, 'みぃそ')
-	str = str.replace(/ミミミ/g, 'ミィソ')
-	str = str.replace(/ソソソ/g, 'ミィソ')
-	str = str.replace(/^[ミッゥ]/gm, 'ミ')
-	str = str.replace(/^[ｩｯ]/gm, 'ｨ')
-	return str;
+	.replace(/[a-hA-H]/g,'mi')
+  .replace(/[i-pI-P]/g,'s')
+  .replace(/[q-zQ-Z]/g,'o')
+
+	.replace(/[a-z]{3}/g, 'miso')
+	.replace(/[A-Z]{3}/g, 'Miso')
+	.replace(/みみみ/g, 'みぃそ')
+	.replace(/そそそ/g, 'みぃそ')
+	.replace(/ミミミ/g, 'ミィソ')
+	.replace(/ソソソ/g, 'ミィソ')
+	.replace(/^[ミッゥ]/gm, 'ミ')
+	.replace(/^[ｩｯ]/gm, 'ｨ')
 }
-
-function miso()
-{
-	var uhomae = document.getElementById("uhomae").value;
-	var uhogo = misorize(uhomae)
-	document.getElementById("uhogo").value = uhogo;
+function miso() {
+	document.getElementById("amiso").value = misorize( document.getElementById("bmiso").value )
 }
 
 </script>
 </head>
+
 <body>
 <h1>ミソライザー</h1>
 <br/>
-<textarea id="uhomae" rows="20" cols="100"></textarea><br/>
+<textarea id="bmiso" rows="20" cols="100"></textarea><br/>
 <button onclick='miso()'>ミソライズ実行</button>
 <hr/>
-<textarea id="uhogo" rows="20" cols="100"></textarea>
+<textarea id="amiso" rows="20" cols="100"></textarea>
 <br>
-元ネタ: http://www.geocities.jp/uho_uho_uho_ho/uho.html<br>
-Ver:5
+元ネタ: <a href="http://www.geocities.jp/uho_uho_uho_ho/uho.html">ウホライザー</a><br>
+Ver:6
 </body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109885867-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109885867-3');
+</script>
+
+</html>
+
