@@ -43,15 +43,15 @@ function misorize(str) {
 	.replace(/[パピプペポ]/g,'ソ')	
 	.replace(/[ァィゥェォャュョ]/g,'ィ')
 	.replace(/[ッ]/g,'ッ')
-
+	
 	.replace(/[0-4]/g,'ﾐ')
 	.replace(/[6-9]/g,'ｿ')
 	.replace(/[5]/g,'ｯ')
-
+	
 	.replace(/[a-hA-H]/g,'mi')
-  .replace(/[i-pI-P]/g,'s')
-  .replace(/[q-zQ-Z]/g,'o')
-
+	.replace(/[i-pI-P]/g,'s')
+	.replace(/[q-zQ-Z]/g,'o')
+	
 	.replace(/[a-z]{3}/g, 'miso')
 	.replace(/[A-Z]{3}/g, 'Miso')
 	.replace(/みみみ/g, 'みぃそ')
